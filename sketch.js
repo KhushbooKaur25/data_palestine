@@ -52,7 +52,7 @@ image(backgroundImage,width/2,height/2);
   fill("red");
   textAlign(CENTER);
   textSize(80);
-  text("Number of Palestinians killed in Gaza so far", width / 2, height / 8);
+  text("Number of Palestinians killed per day in Gaza so far", width / 2, height / 8);
   
   fill("white");
   textAlign(CENTER);
@@ -120,7 +120,7 @@ class PalPeople {
     textAlign(LEFT);
     textSize(24);
     fill("black");
-    text("Killed", mouseX + 145, mouseY + 40);
+    text("Killed on", mouseX + 145, mouseY + 40);
     text("Children", mouseX + 145, mouseY + 90);
     text("Women", mouseX + 145, mouseY + 140);
     text("Men", mouseX + 145, mouseY + 190);
@@ -160,9 +160,4 @@ class PalPeople {
     print("Women", this.data_split[2]);
     print("Men", this.data_split[3]);
   }
-}
-
-function windowResized() {
-  // Resize the canvas to match the new window size
-  resizeCanvas(windowWidth, windowHeight);
 }
