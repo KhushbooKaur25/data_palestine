@@ -25,7 +25,7 @@ customFont = loadFont('bloody.ttf');
   women_img = loadImage("Women.png");
   append(people_designs, women_img);
   
-  // backgroundImage = loadImage('gaza.jpg');
+  backgroundImage = loadImage('gaza.jpg');
    
 }
 
@@ -34,7 +34,7 @@ function setup() {
   canvas.parent('data');
   imageMode(CENTER);
   textFont(customFont);
-  // background(backgroundImage);
+  background(backgroundImage);
   // If the file fails to open, then it will print the error and exit.
   if (palpeople_data == null) {
     print("Failed to open palpeople.csv");
@@ -47,9 +47,8 @@ function setup() {
 }
 
 function draw() {
-  background (220);
-  //image(backgroundImage,0,0);
-
+  
+image(backgroundImage,width/2,height/2);
   // This draws the stars in the background.
   fill("red");
   textAlign(CENTER);
@@ -164,3 +163,7 @@ class PalPeople {
   }
 }
 
+function windowResized() {
+  // Resize the canvas to match the new window size
+  resizeCanvas(windowWidth, windowHeight);
+}
