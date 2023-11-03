@@ -161,8 +161,3 @@ class PalPeople {
     print("Men", this.data_split[3]);
   }
 }
-
-function windowResized() {
-  // Resize the canvas to match the new window size
-  resizeCanvas(windowWidth, windowHeight);
-}
