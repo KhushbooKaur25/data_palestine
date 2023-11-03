@@ -34,7 +34,6 @@ function setup() {
   canvas.parent('data');
   imageMode(CENTER);
   textFont(customFont);
-  background(backgroundImage);
   // If the file fails to open, then it will print the error and exit.
   if (palpeople_data == null) {
     print("Failed to open palpeople.csv");
